@@ -1,0 +1,20 @@
+
+{
+"giftcard":"//*[@id='header']/section/div/ul[2]/li[4]/a",
+"category":" //p[contains(text(),'Gift something memorable to help them celebrate gr')]",
+"amount":"//*[@id='ip_2251506436']",
+"month":"//section[2]/div[4]/select[1]",
+"date":"//body//select[2]",
+"next":"//*[contains(text(),'Next')]",
+"recipientsname":"recipient_name",
+"yourname":"customer_name",
+"recipientsemail":"recipient_email",
+"youremail":"customer_email",
+"phone":"customer_mobile_number",
+"confirm":"//*[@id='app-container']/div/main/section/section[3]/form/button",
+"proceedtopayment":"//span[contains(text(),'Proceed to payment')]",
+"customeremailinavalid":"//*[@id='app-container']//section[4]/div[2]/ul/li[1]",
+"recipentsemailinvalid":"//*[@id='app-container']//section[4]/div[2]/ul/li[2]",
+"phoneinvalid":"//*[@id='app-container']//section[4]/div[2]/ul/li[3]"
+}
+

@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 6, Time elapsed: 1.38 s <<< FAILURE! - in TestSuite
+driverConfiguration(testScenario.GiftCardInvalidInput)  Time elapsed: 1.128 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable does not exist: C:\Users\AMMU\Downloads\chromedriver_win32 (1)\chromedriver.exe
+	at testScenario.GiftCardInvalidInput.driverConfiguration(GiftCardInvalidInput.java:57)
+

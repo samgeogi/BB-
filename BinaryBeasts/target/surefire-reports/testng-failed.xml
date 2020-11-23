@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" verbose="0">
+  <parameter name="browser" value="chrome"/>
+  <test name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testScenario.GiftCardInvalidInput">
+        <methods>
+          <include name="testcase_readExcelData"/>
+          <include name="testcase_selectGiftCards"/>
+          <include name="errorMessage"/>
+          <include name="driverConfiguration"/>
+          <include name="testcase_getPathFile"/>
+          <include name="testcase_customiseGiftCard"/>
+          <include name="testcase_clickGiftCards"/>
+          <include name="testcase_FillDetails"/>
+        </methods>
+      </class> <!-- testScenario.GiftCardInvalidInput -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

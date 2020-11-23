@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="29800" started-at="2020-11-23T06:19:51Z" finished-at="2020-11-23T06:20:20Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="29800" started-at="2020-11-23T06:19:51Z" finished-at="2020-11-23T06:20:20Z">
+      <class name="testScenario.GiftCardInvalidInput">
+        <test-method status="PASS" signature="testcase_getPathFile()[pri:0, instance:testScenario.GiftCardInvalidInput@59fa1d9b]" name="testcase_getPathFile" is-config="true" duration-ms="13" started-at="2020-11-23T11:49:51Z" finished-at="2020-11-23T11:49:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_getPathFile -->
+        <test-method status="PASS" signature="driverConfiguration(java.lang.String)[pri:0, instance:testScenario.GiftCardInvalidInput@59fa1d9b]" name="driverConfiguration" is-config="true" duration-ms="13221" started-at="2020-11-23T11:49:51Z" finished-at="2020-11-23T11:50:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverConfiguration -->
+        <test-method status="PASS" signature="testcase_readExcelData()[pri:0, instance:testScenario.GiftCardInvalidInput@59fa1d9b]" name="testcase_readExcelData" duration-ms="633" started-at="2020-11-23T11:50:04Z" finished-at="2020-11-23T11:50:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_readExcelData -->
+        <test-method status="PASS" signature="testcase_clickGiftCards()[pri:0, instance:testScenario.GiftCardInvalidInput@59fa1d9b]" name="testcase_clickGiftCards" duration-ms="9844" started-at="2020-11-23T11:50:05Z" finished-at="2020-11-23T11:50:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_clickGiftCards -->
+        <test-method status="PASS" signature="testcase_selectGiftCards()[pri:0, instance:testScenario.GiftCardInvalidInput@59fa1d9b]" name="testcase_selectGiftCards" duration-ms="89" started-at="2020-11-23T11:50:14Z" finished-at="2020-11-23T11:50:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_selectGiftCards -->
+        <test-method status="PASS" signature="testcase_customiseGiftCard()[pri:0, instance:testScenario.GiftCardInvalidInput@59fa1d9b]" name="testcase_customiseGiftCard" duration-ms="952" started-at="2020-11-23T11:50:14Z" finished-at="2020-11-23T11:50:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_customiseGiftCard -->
+        <test-method status="PASS" signature="testcase_FillDetails()[pri:0, instance:testScenario.GiftCardInvalidInput@59fa1d9b]" name="testcase_FillDetails" duration-ms="4862" started-at="2020-11-23T11:50:15Z" finished-at="2020-11-23T11:50:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase_FillDetails -->
+        <test-method status="PASS" signature="errorMessage()[pri:0, instance:testScenario.GiftCardInvalidInput@59fa1d9b]" name="errorMessage" duration-ms="159" started-at="2020-11-23T11:50:20Z" finished-at="2020-11-23T11:50:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorMessage -->
+      </class> <!-- testScenario.GiftCardInvalidInput -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
