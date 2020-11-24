@@ -11,11 +11,13 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import userDefinedLibraries.DriverSetup;
+
 public class ExcelReadWrite {
 	public static File src;
-	public static String exfilepath = "C:\\Users\\AMMU\\Desktop\\anjana\\WorkSpace\\BinaryBeasts\\src\\test\\java\\dataTable\\DataTable.xlsx";
+	//public static String exfilepath = "C:\\Users\\AMMU\\Desktop\\anjana\\WorkSpace\\BinaryBeasts\\src\\test\\java\\dataTable\\DataTable.xlsx";
 	//public static String exfilepath = "anjana\\WorkSpace\\BinaryBeasts\\src\\test\\java\\dataTable\\DataTable.xlsx";
-
+	public static String exfilepath = "C:\\Users\\AMMU\\git\\BB-\\BinaryBeasts\\src\\test\\java\\dataTable\\DataTable.xlsx";
 	public static FileInputStream fileip;
 	public static FileOutputStream fileop;
 	public static XSSFWorkbook workbook;
@@ -91,15 +93,41 @@ public class ExcelReadWrite {
 	}
 
 	// Write the output into excel sheet
-	/*public static void writeexcel() {
+	public static void writeexcel(String errorMessage_customeremail,String errorMessage_recipentsemail,String errormessage_Phone) {
 		try {
-			// Close input stream
-			fileip.close();
+			 File file = new File("C:\\Users\\AMMU\\git\\BB-\\BinaryBeasts\\src\\test\\java\\OutPut.xlsx");
+			// Create an object of FileInputStream class to read data from excel
+			 FileInputStream fileip1 = new FileInputStream(file);
+			// Create Workbook instance holding reference to ".xlsx" file
+			 XSSFWorkbook workbook1 = new XSSFWorkbook(fileip1);
+			// Get desired sheet from workbook
+			 XSSFSheet sheet1 = workbook1.getSheet("GiftCard_InvalidInput");
 			// Create an object of FileOutputStream class to create write data
 			// in excel file
-			fileop = new FileOutputStream(new File(exfilepath));
+			if (!DriverSetup.browsertype.equalsIgnoreCase("Edge")) {
+				
+				 XSSFCell cell1= sheet1.createRow(1).createCell(0);
+				 XSSFCell cell2= sheet1.createRow(2).createCell(0);
+				 XSSFCell cell3= sheet1.createRow(3).createCell(0);
+				 
+				 cell1.setCellValue(errorMessage_customeremail);
+				 cell2.setCellValue(errorMessage_recipentsemail);
+				 cell3.setCellValue(errormessage_Phone);
+				}
+			else
+			{
+				 XSSFCell cell1= sheet.createRow(5).createCell(0);
+				 XSSFCell cell2= sheet.createRow(6).createCell(0);
+				 XSSFCell cell3= sheet.createRow(7).createCell(0);
+				 
+				 cell1.setCellValue(errorMessage_customeremail);
+				 cell2.setCellValue(errorMessage_recipentsemail);
+				 cell3.setCellValue(errormessage_Phone);	
+			}
+				
+			fileop = new FileOutputStream(new File("C:\\Users\\AMMU\\git\\BB-\\BinaryBeasts\\src\\test\\java\\OutPut.xlsx"));
 			// write data in the excel file
-			workbook.write(fileop);
+			workbook1.write(fileop);
 			// close output stream
 			fileop.close();
 		} catch (FileNotFoundException e) {
@@ -108,5 +136,5 @@ public class ExcelReadWrite {
 			e.printStackTrace();
 		}
 
-	}*/
+	}
 }

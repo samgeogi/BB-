@@ -29,6 +29,7 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 
 //import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
+
 import userDefinedLibraries.DriverSetup;
 import userDefinedLibraries.ExcelReadWrite;
 import userDefinedLibraries.ScreenShot;
@@ -64,7 +65,7 @@ public void testcase_getPathFile(){
 	     
 	    try {
 	        //FileReader reader = new FileReader(dataFilePath + "giftcardPath.json");  
-	    	 FileReader reader = new FileReader("C:\\Users\\AMMU\\Desktop\\anjana\\WorkSpace\\BinaryBeasts\\src\\test\\java\\testObjectRepository\\giftcardPath.json");   
+	    	 FileReader reader = new FileReader("C:\\Users\\AMMU\\git\\BB-\\BinaryBeasts\\src\\test\\java\\testObjectRepository\\giftcardPath.json");   
 	        JSONParser jsonParser = new JSONParser();
 	         jsonObject = (JSONObject) jsonParser.parse(reader);
 	        
@@ -380,6 +381,15 @@ public void testcase_getPathFile(){
 		{
 			e.printStackTrace();
 		}
-	}		
+	}
+	@Test(priority=7)
+	public static void write_ErrorMessage(){
+		try{
+			ExcelReadWrite.writeexcel(errorMessage_customeremail,errorMessage_recipentsemail,errormessage_Phone);
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
 }
 
